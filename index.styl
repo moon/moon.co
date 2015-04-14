@@ -1,6 +1,11 @@
 
 @import 'nib'
 
+logo-size(height)
+    
+    height: height
+    width: round(height*4.125)
+
 global-reset()
 
 html, body
@@ -45,9 +50,9 @@ html, body
 
 .logo
     
+    logo-size(104px)
     display: block
-    height: 104px
-    width: 100%
+    margin: 0 auto
     fill: #fff
 
 h1 em
@@ -117,7 +122,6 @@ h1 em
         border-radius: 0 22px 22px 0
         text-transform: uppercase
         letter-spacing: 0.033em
-        // margin-left: -1px
         background: #fff
         cursor: pointer
         
@@ -174,7 +178,7 @@ h1 em
 
     .logo
         
-        height: 72px
+        logo-size(72px)
         
     .caption
         
