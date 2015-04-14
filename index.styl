@@ -37,7 +37,7 @@ html, body
 
 .content
     
-    margin-top: -130px
+    margin-top: -160px
     position: absolute
     width: 100%
     left: 0
@@ -46,7 +46,7 @@ html, body
 .logo
     
     display: block
-    height: 112px
+    height: 104px
     width: 100%
     fill: #fff
 
@@ -57,29 +57,35 @@ h1 em
 .caption
     
     text-transform: uppercase
-    letter-spacing: 0.33em
+    letter-spacing: 6px
     font-weight: 300
-    margin-top: 40px
+    margin-top: 64px
     font-size: 12px
 
 .signup
     
-    margin-top: 80px
+    margin-top: 100px
 
     input
         
         -webkit-font-smoothing: antialiased
         -moz-osx-font-smoothing: grayscale
         font-family: 'Montserrat', sans-serif
+        transition: opacity 0.3s ease-out
         font-size: 14px
-        padding: 12px 14px
+        padding: 12px 18px
         display: inline-block
-        border: 2px solid #fff
+        opacity: 0.75
+        border: 1px solid #fff
         margin: 0
         
         &:focus
             
             outline: none
+            
+    &:hover input
+        
+        opacity: 1
 
     &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
         
@@ -87,15 +93,18 @@ h1 em
 
     .email
         
+        border-radius: 22px 0 0 22px
         text-transform: uppercase
         background: transparent
-        width: 220px
+        width: 200px
         color: #fff
 
     .button
         
+        border-radius: 0 22px 22px 0
         text-transform: uppercase
         letter-spacing: 0.033em
+        padding-right: 20px
         margin-left: -6px
         background: #fff
         font-size: 0.9em
