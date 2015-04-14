@@ -9,14 +9,16 @@ html, body
     -moz-osx-font-smoothing: grayscale
     font-family: 'Montserrat', sans-serif
     text-align: center
-    background: #111
+    background: #1D2026
     overflow: hidden
     height: 100%
     color: #fff
 
 .space
     
-    background: url(nebula.jpg) no-repeat center 100%
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 100%
     background-size: cover
     position: absolute
     opacity: 0.6
@@ -120,9 +122,12 @@ h1 em
     100% { transform: translateY(0px); opacity: 1; }
     
 .space
-    
-    animation: scale-in 12s ease-out 0s forwards
+
     opacity: 0
+    
+    &.animate
+        
+        animation: scale-in 12s ease-out 0s forwards
     
 .logo
     
