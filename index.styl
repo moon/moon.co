@@ -1,0 +1,141 @@
+
+@import 'nib'
+
+global-reset()
+
+html, body
+
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-family: 'Montserrat', sans-serif
+    text-align: center
+    background: #111
+    overflow: hidden
+    height: 100%
+    color: #fff
+
+.space
+    
+    background: url(nebula.jpg) no-repeat center 100%
+    background-size: cover
+    position: absolute
+    opacity: 0.6
+    height: 100%
+    width: 100%
+    left: 0
+    top: 0
+    
+    &:after
+        
+        background: rgba(#000, 0.4)
+        position: absolute
+        content: ''
+        display: block
+        size: 100% 100%
+
+.content
+    
+    margin-top: -130px
+    position: absolute
+    width: 100%
+    left: 0
+    top: 50%
+
+.logo
+    
+    display: block
+    height: 112px
+    width: 100%
+    fill: #fff
+
+h1 em
+    
+    display: none
+
+.caption
+    
+    text-transform: uppercase
+    letter-spacing: 0.33em
+    font-weight: 300
+    margin-top: 40px
+    font-size: 12px
+
+.signup
+    
+    margin-top: 80px
+
+    input
+        
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        font-family: 'Montserrat', sans-serif
+        font-size: 14px
+        padding: 12px 14px
+        display: inline-block
+        border: 2px solid #fff
+        margin: 0
+        
+        &:focus
+            
+            outline: none
+
+    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+        
+        color: #fff
+
+    .email
+        
+        text-transform: uppercase
+        background: transparent
+        width: 220px
+        color: #fff
+
+    .button
+        
+        text-transform: uppercase
+        letter-spacing: 0.033em
+        margin-left: -6px
+        background: #fff
+        font-size: 0.9em
+        cursor: pointer
+        
+.mce_inline_error
+    
+    text-transform: uppercase
+    margin-top: 20px
+    font-size: 12px
+
+/* Animation */
+
+@keyframes fade-in
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    
+@keyframes scale-in
+    0% { transform: scale(1) rotate(3deg); opacity: 0; }
+    100% { transform: scale(1.15) rotate(-1deg); opacity: 1; }
+    
+@keyframes slide-in
+    0% { transform: translateY(10px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+    
+.space
+    
+    animation: scale-in 12s ease-out 0s forwards
+    opacity: 0
+    
+.logo
+    
+    animation: fade-in 3s ease-in-out 1s forwards
+    opacity: 0
+    
+.caption
+    
+    animation: fade-in 1.5s ease-in-out 2.4s forwards
+    opacity: 0
+    
+.signup
+    
+    animation: slide-in 1.6s ease-in-out 4.1s forwards
+    opacity: 0
+    
