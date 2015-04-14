@@ -65,19 +65,30 @@ h1 em
 .signup
     
     margin-top: 100px
+    font-size: 0
 
     input
         
         -webkit-font-smoothing: antialiased
         -moz-osx-font-smoothing: grayscale
         font-family: 'Montserrat', sans-serif
-        transition: opacity 0.3s ease-out
+        transition: opacity 0.33s ease-out
         font-size: 14px
+        outline: none
         padding: 12px 18px
         display: inline-block
         opacity: 0.75
         border: 1px solid #fff
         margin: 0
+        
+        &:-webkit-autofill
+            
+            -webkit-box-shadow: 0 0 0px 1000px white inset
+        
+        &::-moz-focus-inner
+
+            padding: 0
+            border: 0 
         
         &:focus
             
@@ -95,8 +106,10 @@ h1 em
         
         border-radius: 22px 0 0 22px
         text-transform: uppercase
+        padding-right: 0
+        border-right: none
         background: transparent
-        width: 200px
+        width: 220px
         color: #fff
 
     .button
@@ -104,10 +117,8 @@ h1 em
         border-radius: 0 22px 22px 0
         text-transform: uppercase
         letter-spacing: 0.033em
-        padding-right: 20px
-        margin-left: -6px
+        // margin-left: -1px
         background: #fff
-        font-size: 0.9em
         cursor: pointer
         
 .mce_inline_error
@@ -153,3 +164,30 @@ h1 em
     animation: slide-in 1.6s ease-in-out 4.1s forwards
     opacity: 0
     
+// Breakpoints
+
+@media only screen and (max-width: 600px)
+
+    .content
+        
+        margin-top: -120px
+
+    .logo
+        
+        height: 72px
+        
+    .caption
+        
+        font-size: 11px
+
+    .signup
+        
+        margin-top: 60px
+        
+        input
+            
+            font-size: 12px
+        
+        .email
+            
+            width: 200px
