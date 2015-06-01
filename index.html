@@ -1,79 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Moon: A Platform for Artists</title>
-    <meta name="description" content="Moon is a brand new platform for artists to discuss, refine and promote their work. Launching 2015." />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <meta name="msapplication-TileImage" content="favicon.png">
-    <meta property="og:title" content="Moon">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://moon.co">
-    <meta property="og:image" content="http://moon.co/moon.png">
-    <meta property="og:site_name" content="Moon">
-    <meta property="og:description" content="Moon is a brand new platform for artists to discuss, refine and promote their work. Launching 2015.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@moondotco">
-    <meta name="twitter:title" content="Moon">
-    <meta name="twitter:description" content="Moon is a brand new platform for artists to discuss, refine and promote their work. Launching 2015.">
-    <meta name="twitter:image:src" content="http://moon.co/moon.png">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-61958297-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+
+  <title>Moon</title>
+
+  <!-- Meta -->
+  <link rel="canonical" href="http://moon.co/">
+  <meta name="keywords" content="moon,art,design,illustration,photography">
+  <meta name="description" content="Moon is a brand new platform for artists to discuss, refine and promote their work. Launching 2015.">
+
+  <!-- Web App Flags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Moon">
+  <meta property="og:site_name" content="Moon">
+  <meta property="og:url" content="http://moon.co/">
+  <meta property="og:image" content="http://moon.co/moon.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Moon is a brand new platform for artists to discuss, refine and promote their work. Launching 2015.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@moondotco">
+  <meta name="twitter:title" content="Moon">
+  <meta name="twitter:description" content="Moon is a brand new platform for artists to discuss, refine and promote their work. Launching 2015.">
+  <meta name="twitter:image:src" content="http://moon.co/moon.jpg">
+
+  <!-- Facebook -->
+  <meta property="fb:app_id" content="1440824842894898">
+
+  <!-- Meta -->
+  <meta name="apple-mobile-web-app-title" content="Moon">
+
+  <!-- Browser Styles -->
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Touch Icons -->
+
+  <!-- iPad retina icon -->
+  <link href="/apple-touch-icon-precomposed-152x152.png"
+        sizes="152x152"
+        rel="apple-touch-icon-precomposed">
+
+  <!-- iPad retina icon (iOS < 7) -->
+  <link href="/apple-touch-icon-precomposed-144x144.png"
+        sizes="144x144"
+        rel="apple-touch-icon-precomposed">
+
+  <!-- iPad non-retina icon -->
+  <link href="/apple-touch-icon-precomposed-76x76.png"
+        sizes="76x76"
+        rel="apple-touch-icon-precomposed">
+
+  <!-- iPad non-retina icon (iOS < 7) -->
+  <link href="/apple-touch-icon-precomposed-72x72.png"
+        sizes="72x72"
+        rel="apple-touch-icon-precomposed">
+
+  <!-- iPhone 6 Plus icon -->
+  <link href="/apple-touch-icon-precomposed-180x180.png"
+        sizes="120x120"
+        rel="apple-touch-icon-precomposed">
+
+  <!-- iPhone retina icon (iOS < 7) -->
+  <link href="/apple-touch-icon-precomposed-114x114.png"
+        sizes="114x114"
+        rel="apple-touch-icon-precomposed">
+
+  <!-- iPhone non-retina icon (iOS < 7) -->
+  <link href="/apple-touch-icon-precomposed-57x57.png"
+        sizes="57x57"
+        rel="apple-touch-icon-precomposed">
+
+  <!-- Startup Images -->
+
+  <!-- iPad retina portrait startup image -->
+  <link href="/apple-touch-startup-image-1536x2008.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+               and (-webkit-device-pixel-ratio: 2)
+               and (orientation: portrait)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPad retina landscape startup image -->
+  <link href="/apple-touch-startup-image-1496x2048.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+               and (-webkit-device-pixel-ratio: 2)
+               and (orientation: landscape)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPad non-retina portrait startup image -->
+  <link href="/apple-touch-startup-image-768x1004.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+               and (-webkit-device-pixel-ratio: 1)
+               and (orientation: portrait)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPad non-retina landscape startup image -->
+  <link href="/apple-touch-startup-image-748x1024.png"
+        media="(device-width: 768px) and (device-height: 1024px)
+               and (-webkit-device-pixel-ratio: 1)
+               and (orientation: landscape)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone 6 Plus portrait startup image -->
+  <link href="/apple-touch-startup-image-1242x2148.png"
+        media="(device-width: 414px) and (device-height: 736px)
+               and (-webkit-device-pixel-ratio: 3)
+               and (orientation: portrait)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone 6 Plus landscape startup image -->
+  <link href="/apple-touch-startup-image-1182x2208.png"
+        media="(device-width: 414px) and (device-height: 736px)
+               and (-webkit-device-pixel-ratio: 3)
+               and (orientation: landscape)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone 6 startup image -->
+  <link href="/apple-touch-startup-image-750x1294.png"
+        media="(device-width: 375px) and (device-height: 667px)
+               and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone 5 startup image -->
+  <link href="/apple-touch-startup-image-640x1096.png"
+        media="(device-width: 320px) and (device-height: 568px)
+               and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone < 5 retina startup image -->
+  <link href="/apple-touch-startup-image-640x920.png"
+        media="(device-width: 320px) and (device-height: 480px)
+               and (-webkit-device-pixel-ratio: 2)"
+        rel="apple-touch-startup-image">
+
+  <!-- iPhone < 5 non-retina startup image -->
+  <link href="/apple-touch-startup-image-320x460.png"
+        media="(device-width: 320px) and (device-height: 480px)
+               and (-webkit-device-pixel-ratio: 1)"
+        rel="apple-touch-startup-image">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <meta name="msapplication-TileImage" content="favicon.png">
+
+  <!-- Styles -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <!-- Scripts -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-61958297-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
 </head>
 <body>
-    <div class="container">
-        <img id="moon" src="moon.png" alt="Moon" width="0">
-        <div class="space"></div>
-        <div class="content">
-            <h1>
-                <em>Moon</em>
-                <svg class="logo" width="66px" height="16px" viewBox="0 0 66 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path d="M66,16 L50,0 L66,0 L66,16 Z M44,16 C48.418278,16 52,12.418278 52,8 C52,3.581722 48.418278,0 44,0 C39.581722,0 36,3.581722 36,8 C36,12.418278 39.581722,16 44,16 Z M26,16 C30.418278,16 34,12.418278 34,8 C34,3.581722 30.418278,0 26,0 C21.581722,0 18,3.581722 18,8 C18,12.418278 21.581722,16 26,16 Z M0,0 L0,16 L8,16 L16,16 L16,0 L8,8 L0,0 Z"></path>
-                </svg>
-            </h1>
-            <h2 class="caption">Preparing for Launch</h2>
-            <div class="signup">
-            <form action="//moon.us10.list-manage.com/subscribe/post?u=a3ad7c79160a634d7bae92815&amp;id=a90ddc666c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                <div class="mc-field-group">
-                    <input type="email" value="" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
-                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_a3ad7c79160a634d7bae92815_a90ddc666c" tabindex="-1" value=""></div>
-                    <input type="submit" value="Suit up" name="subscribe" id="mc-embedded-subscribe" class="button">
-                    <div class="errors">
-                        <div for="mce-EMAIL" class="mce_inline_error">&nbsp;</div>
-                    </div>
-                </div>
-                <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                </div>
-            </form>
-            </div>
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-            <a class="vote" href="http://www.virginmediabusiness.co.uk/pitch-to-rich/new-things/moon/">
-                <h2>Vote for us</h2>
-            </a>
-        </div>
-        <footer class="footer">
-            <div class="follow">
-                <a href="https://twitter.com/moondotco" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @moondotco</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            </div>
-            <div class="message">us for updates</div>
-        </footer>
-    </div>
-    <script src="index.js"></script>
+
+  <div class="container">
+  </div>
+
+  <script src="index.js"></script>
+
 </body>
 </html>
