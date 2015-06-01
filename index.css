@@ -1,0 +1,17 @@
+
+body {
+  background: #252B2E;
+  padding: 0;
+  margin: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.logo {
+  margin: 64px auto;
+  display: block;
+  width: 132px;
+  height: 32px;
+}
