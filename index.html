@@ -172,17 +172,25 @@
 </head>
 <body>
 
+  <!-- Graphics -->
   <svg xmlns="http://www.w3.org/2000/svg" class="invisible">
     <symbol id="logo" viewBox="0 0 66 16">
       <title>logo</title>
-      <path fill="#FFFFFF" d="M66,16 L50,0 L66,0 L66,16 Z M44,16 C48.418278,16 52,12.418278 52,8 C52,3.581722 48.418278,0 44,0 C39.581722,0 36,3.581722 36,8 C36,12.418278 39.581722,16 44,16 Z M26,16 C30.418278,16 34,12.418278 34,8 C34,3.581722 30.418278,0 26,0 C21.581722,0 18,3.581722 18,8 C18,12.418278 21.581722,16 26,16 Z M0,0 L0,16 L8,16 L16,16 L16,0 L8,8 L0,0 Z"></path>
+      <path fill="#4A5358" d="M66,16 L50,0 L66,0 L66,16 Z M44,16 C48.418278,16 52,12.418278 52,8 C52,3.581722 48.418278,0 44,0 C39.581722,0 36,3.581722 36,8 C36,12.418278 39.581722,16 44,16 Z M26,16 C30.418278,16 34,12.418278 34,8 C34,3.581722 30.418278,0 26,0 C21.581722,0 18,3.581722 18,8 C18,12.418278 21.581722,16 26,16 Z M0,0 L0,16 L8,16 L16,16 L16,0 L8,8 L0,0 Z"></path>
     </symbol>
   </svg>
 
+  <!-- Site -->
   <div class="container">
-    <svg class="logo"><use xlink:href="#logo"/></svg>
+    <div class="base fill">
+      <svg class="logo">
+        <use xlink:href="#logo"/>
+      </svg>
+    </div>
+    <div class="frame fill"></div>
   </div>
 
+  <!-- Scripts -->
   <script src="index.js"></script>
 
 </body>
