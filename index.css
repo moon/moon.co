@@ -1,47 +1,237 @@
-
-body {
-  background: #252B2E;
-  padding: 0;
+@import url("http://fonts.googleapis.com/css?family=Dosis:400,500,600");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
-
-iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
   border: none;
 }
-
-.invisible {
-  display: none;
+html,
+body {
+  font-family: 'Dosis', monospace, sans-serif;
+  text-align: center;
+  background: #000;
+  overflow: hidden;
+  height: 100%;
+  color: #ccc;
 }
-
 .fill {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  bottom: 0;
+  right: 0;
   left: 0;
   top: 0;
 }
-
-.logo {
-  margin: 0 auto;
+#loader {
+  pointer-events: none;
+  -webkit-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.33s;
+  -moz-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.33s;
+  -o-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.33s;
+  -ms-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.33s;
+  transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.33s;
+  max-width: 400px;
+  position: relative;
   display: block;
-  width: 396px;
-  height: 96px;
-}
-
-.base {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.frame {
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  margin: -90px auto 0 auto;
+  width: 60%;
+  top: 50%;
 }
-
-.frame.show {
-  transition: opacity 0.5s 0.5s ease-out;
+#loader.show {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
   opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#loader.show .message {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#logo {
+  height: auto;
+  width: 100%;
+  stroke: #ccc;
+  stroke-width: 0.75;
+  fill: none;
+}
+#logo .O {
+  stroke-width: 0.9;
+}
+.message {
+  -webkit-transition: opacity 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: opacity 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: opacity 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: opacity 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: opacity 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 40px;
+  font-size: 16px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.message h2 {
+  font-weight: 100;
+}
+.logo {
+  height: 32px;
+  width: 132px;
+}
+.logo .path {
+  stroke-linecap: round;
+}
+.logo .index-0 {
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  -webkit-transition: stroke-dashoffset 1.33s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: stroke-dashoffset 1.33s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: stroke-dashoffset 1.33s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: stroke-dashoffset 1.33s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: stroke-dashoffset 1.33s 0s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.logo.show .index-0 {
+  stroke-dashoffset: 0;
+}
+.logo .index-1 {
+  stroke-dasharray: 94;
+  stroke-dashoffset: 94;
+  -webkit-transition: stroke-dashoffset 0.961692307692308s 0.33s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: stroke-dashoffset 0.961692307692308s 0.33s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: stroke-dashoffset 0.961692307692308s 0.33s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: stroke-dashoffset 0.961692307692308s 0.33s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: stroke-dashoffset 0.961692307692308s 0.33s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.logo.show .index-1 {
+  stroke-dashoffset: 0;
+}
+.logo .index-2 {
+  stroke-dasharray: 94;
+  stroke-dashoffset: 94;
+  -webkit-transition: stroke-dashoffset 0.961692307692308s 0.568615384615385s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: stroke-dashoffset 0.961692307692308s 0.568615384615385s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: stroke-dashoffset 0.961692307692308s 0.568615384615385s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: stroke-dashoffset 0.961692307692308s 0.568615384615385s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: stroke-dashoffset 0.961692307692308s 0.568615384615385s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.logo.show .index-2 {
+  stroke-dashoffset: 0;
+}
+.logo .index-3 {
+  stroke-dasharray: 98;
+  stroke-dashoffset: 98;
+  -webkit-transition: stroke-dashoffset 1.002615384615385s 0.807230769230769s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: stroke-dashoffset 1.002615384615385s 0.807230769230769s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: stroke-dashoffset 1.002615384615385s 0.807230769230769s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -ms-transition: stroke-dashoffset 1.002615384615385s 0.807230769230769s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: stroke-dashoffset 1.002615384615385s 0.807230769230769s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.logo.show .index-3 {
+  stroke-dashoffset: 0;
+}
+#game {
+  -webkit-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 1.33s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+#game.show {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }

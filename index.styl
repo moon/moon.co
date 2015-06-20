@@ -1,0 +1,167 @@
+
+//------------------------------
+// Imports
+//------------------------------
+
+@import url('http://fonts.googleapis.com/css?family=Dosis:400,500,600')
+@import 'nib'
+
+//------------------------------
+// Reset
+//------------------------------
+
+global-reset()
+
+//------------------------------
+// Constants
+//------------------------------
+
+black = #000000
+slate = #333333
+steel = #666666
+stone = #999999
+smoke = #CCCCCC
+white = #FFFFFF
+
+ease-in-quad = cubic-bezier(0.550, 0.085, 0.680, 0.530)
+ease-out-quad = cubic-bezier(0.250, 0.460, 0.450, 0.940)
+ease-in-out-quad = cubic-bezier(0.455, 0.030, 0.515, 0.955)
+
+ease-in-quint = cubic-bezier(0.755, 0.050, 0.855, 0.060)
+ease-out-quint = cubic-bezier(0.230, 1.000, 0.320, 1.000)
+ease-in-out-quint  = cubic-bezier(0.860, 0.000, 0.070, 1.000)
+
+//------------------------------
+// Mixins
+//------------------------------
+
+size(width = 0, height = 0)
+  
+  height: height
+  width: width
+
+dash(length)
+  
+  stroke-dasharray: length
+  stroke-dashoffset: length
+  
+move(x = 0, y = 0)
+
+  transform: translate(x, y)
+  transform: translate3d(x, y, 0)
+
+//------------------------------
+// General
+//------------------------------
+
+html, body
+  
+  font-family: 'Dosis', monospace, sans-serif
+  text-align: center
+  background: black
+  overflow: hidden
+  height: 100%
+  color: smoke
+  
+.fill
+  
+  position: absolute
+  bottom: 0
+  right: 0
+  left: 0
+  top: 0
+  
+#loader
+
+  pointer-events: none
+  transition: opacity 1.33s ease-out-quad 1.33s
+  max-width: 400px
+  position: relative
+  display: block
+  opacity: 0
+  margin: -90px auto 0 auto
+  width: 60%
+  top: 50%
+  
+  &.show
+    
+    transition-delay: 0s
+    opacity: 1
+    
+    .message
+      
+      opacity: 1
+  
+#logo
+  
+  thickness = 0.75
+  
+  size: 100% auto
+  stroke: smoke
+  stroke-width: thickness
+  fill: none
+  
+  .O
+    
+    stroke-width: thickness*1.2
+
+//------------------------------
+// Message
+//------------------------------
+
+.message
+  
+  transition: opacity 2.0s ease-in-out-quad
+  text-transform: uppercase
+  letter-spacing: 0.06em
+  margin-top: 40px
+  font-size: 16px
+  opacity: 0
+  
+  h2
+    
+    font-weight: 100
+  
+//------------------------------
+// Logo
+//------------------------------
+
+.logo
+  
+  size: 132px 32px
+
+  .path
+    stroke-linecap: round
+
+  time = 1.33s
+  step = 0.33s
+  delay = 0.0s
+  easing = ease-in-out-quad
+  lengths = 130 94 94 98
+
+  for length, index in lengths
+    ratio = length / 130
+    duration = ratio * time
+
+    .index-{index}
+      dash: length
+      transition: stroke-dashoffset duration delay easing
+
+    delay += ratio * step
+
+    &.show
+      .index-{index}
+        stroke-dashoffset: 0
+
+//------------------------------
+// Game
+//------------------------------
+
+#game
+  
+  transition: opacity 1.33s ease-out-quad
+  opacity: 0
+  
+  &.show
+    
+    opacity: 1
