@@ -47,8 +47,6 @@
 
   function checkReady() {
 
-    console.log('checkReady', animationReady, frameReady);
-
     if (animationReady && frameReady) {
       
       loader.classList.remove('show');
@@ -56,7 +54,9 @@
       game.classList.add('show');
       
       setTimeout(function() {
-        loader.parentNode.removeChild(loader);
+        if (loader.parentNode) {
+          loader.parentNode.removeChild(loader);
+        }
       }, 3000);
     }
   }
