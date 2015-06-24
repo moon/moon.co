@@ -6,10 +6,10 @@
 
   var RE_LOCALHOST = /^localhost|(127|192)[\.\d+]+$/i;
   var RE_DOMAIN = /^http(?:s)?:\/\/([\w\.-]+)/i;
-  var RE_TRUSTED = /^moonlander.meteor.com$/i;
+  var RE_TRUSTED = /^moonlander.scalingo.io$/i;
 
   var READY_MESSAGE = 'moonlander:ready';
-  var GAME_REMOTE = '//moonlander.meteor.com';
+  var GAME_REMOTE = '//moonlander.scalingo.io';
   var GAME_LOCAL = '//' + window.location.hostname + ':3000';
 
   //------------------------------
