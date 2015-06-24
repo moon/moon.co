@@ -9,7 +9,7 @@
   var RE_TRUSTED = /^moonlander.scalingo.io$/i;
 
   var READY_MESSAGE = 'moonlander:ready';
-  var GAME_REMOTE = '//moonlander.scalingo.io';
+  var GAME_REMOTE = 'http://moonlander.scalingo.io';
   var GAME_LOCAL = '//' + window.location.hostname + ':3000';
 
   //------------------------------
